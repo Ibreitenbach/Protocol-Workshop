@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customize Persona</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <header>
+        <h1>Customize Persona</h1>
+        <nav class="main-nav">
+            <a href="index.html">Persona Library</a>
+            <a href="portfolio.html">Persona Portfolio</a>
+        </nav>
+    </header>
+    <main>
+        <div class="workshop-container">
+            <h2 id="basePersonaName">Customize: [Base Persona Name]</h2>
+
+            <div class="controls-grid">
+                <!-- Tone Slider -->
+                <div class="control-group">
+                    <label for="toneSlider">Tone</label>
+                    <div class="slider-labels"><span>Formal</span><span>Casual</span></div>
+                    <input type="range" id="toneSlider" name="tone" min="0" max="100" value="50">
+                </div>
+
+                <!-- Creativity Slider -->
+                <div class="control-group">
+                    <label for="creativitySlider">Creativity</label>
+                    <div class="slider-labels"><span>Grounded</span><span>Speculative</span></div>
+                    <input type="range" id="creativitySlider" name="creativity" min="0" max="100" value="50">
+                </div>
+
+                <!-- Socratic Questioning Toggle -->
+                <div class="control-group toggle-group">
+                    <label for="socraticToggle">Socratic Questioning</label>
+                    <label class="toggle-switch">
+                        <input type="checkbox" id="socraticToggle" name="socratic">
+                        <span class="toggle-slider"></span>
+                    </label>
+                </div>
+
+                <!-- Devil's Advocate Toggle -->
+                <div class="control-group toggle-group">
+                    <label for="devilsAdvocateToggle">Devil's Advocate</label>
+                    <label class="toggle-switch">
+                        <input type="checkbox" id="devilsAdvocateToggle" name="devilsAdvocate">
+                        <span class="toggle-slider"></span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="custom-name-section">
+                <label for="customPersonaName">Custom Persona Name:</label>
+                <input type="text" id="customPersonaName" name="customPersonaName" placeholder="e.g., My Creative Assistant">
+            </div>
+
+            <div class="action-buttons">
+                <button id="saveConfigBtn">Save Configuration</button>
+                <button id="generatePromptBtn" class="primary-action">Generate Prompt</button>
+            </div>
+             <a href="index.html" class="back-link">Back to Persona Library</a>
+        </div>
+    </main>
+    <script src="static/workshop.js"></script>
+</body>
+</html>
