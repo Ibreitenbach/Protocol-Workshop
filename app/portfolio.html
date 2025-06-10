@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Persona Portfolio</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <header>
+        <h1>My Persona Portfolio</h1>
+        <nav class="main-nav">
+            <a href="index.html">Persona Library</a>
+            <a href="portfolio.html">Persona Portfolio</a>
+        </nav>
+    </header>
+    <main>
+        <div id="portfolioListContainer">
+            <!-- Saved personas will be listed here by portfolio.js -->
+        </div>
+        <div id="emptyPortfolioMessage" style="display:none;">
+            <p>Your Persona Portfolio is empty!</p>
+            <a href="index.html" class="button-style primary-action">Create a New Persona</a>
+        </div>
+    </main>
+    <script src="static/portfolio.js" defer></script>
+</body>
+</html>
